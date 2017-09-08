@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.jitu.buddha.widget.TemplateTitle
+            android:id="@+id/title_layout"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            app:canBack="false"
+            app:titleText="上香通" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            android:scrollbars="none">
+
+            <android.support.percent.PercentRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.percent.PercentRelativeLayout
+                    android:id="@+id/pray"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="#f00"
+                    app:layout_aspectRatio="178%"
+                    app:layout_widthPercent="60%" />
+
+                <android.support.percent.PercentRelativeLayout
+                    android:id="@+id/temple"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_toRightOf="@+id/pray"
+                    android:background="#0f0"
+                    app:layout_aspectRatio="80%"
+                    app:layout_widthPercent="40%" />
+
+                <android.support.percent.PercentRelativeLayout
+                    android:id="@+id/thing"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_below="@+id/temple"
+                    android:layout_toRightOf="@+id/pray"
+                    android:background="#aaa"
+                    app:layout_aspectRatio="80%"
+                    app:layout_widthPercent="40%" />
+
+                <android.support.percent.PercentRelativeLayout
+                    android:id="@+id/object"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_below="@+id/pray"
+                    android:background="#00f"
+                    app:layout_aspectRatio="100%"
+                    app:layout_widthPercent="60%" />
+
+                <android.support.percent.PercentRelativeLayout
+                    android:id="@+id/lesson"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/object"
+                    android:background="#340"
+                    app:layout_aspectRatio="100%"
+                    app:layout_widthPercent="60%" />
+
+                <android.support.percent.PercentRelativeLayout
+                    android:id="@+id/live"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_below="@+id/thing"
+                    android:layout_toRightOf="@+id/pray"
+                    android:background="#567"
+                    app:layout_aspectRatio="80%"
+                    app:layout_widthPercent="40%" />
+
+                <android.support.percent.PercentRelativeLayout
+                    android:id="@+id/user"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_below="@+id/live"
+                    android:background="#39c6c1"
+                    app:layout_aspectRatio="180%"
+                    app:layout_widthPercent="100%" />
+
+            </android.support.percent.PercentRelativeLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</layout>
