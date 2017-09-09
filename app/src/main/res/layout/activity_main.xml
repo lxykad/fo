@@ -24,68 +24,82 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-                <android.support.percent.PercentRelativeLayout
+                <TextView
                     android:id="@+id/pray"
                     android:layout_width="0dp"
                     android:layout_height="0dp"
                     android:background="#f00"
+                    android:gravity="center"
+                    android:text="上香"
                     app:layout_aspectRatio="178%"
                     app:layout_widthPercent="60%" />
 
-                <android.support.percent.PercentRelativeLayout
+                <TextView
                     android:id="@+id/temple"
                     android:layout_width="0dp"
                     android:layout_height="0dp"
                     android:layout_toRightOf="@+id/pray"
                     android:background="#0f0"
+                    android:gravity="center"
+                    android:text="寺庙"
                     app:layout_aspectRatio="80%"
                     app:layout_widthPercent="40%" />
 
-                <android.support.percent.PercentRelativeLayout
+                <TextView
                     android:id="@+id/thing"
                     android:layout_width="0dp"
                     android:layout_height="0dp"
                     android:layout_below="@+id/temple"
                     android:layout_toRightOf="@+id/pray"
                     android:background="#aaa"
+                    android:gravity="center"
+                    android:text="法事"
                     app:layout_aspectRatio="80%"
                     app:layout_widthPercent="40%" />
 
-                <android.support.percent.PercentRelativeLayout
+                <TextView
                     android:id="@+id/object"
                     android:layout_width="0dp"
                     android:layout_height="0dp"
                     android:layout_below="@+id/pray"
-                    android:background="#00f"
+                    android:background="#fff"
+                    android:gravity="center"
+                    android:text="法物"
                     app:layout_aspectRatio="100%"
                     app:layout_widthPercent="60%" />
 
-                <android.support.percent.PercentRelativeLayout
+                <TextView
                     android:id="@+id/lesson"
                     android:layout_width="0dp"
                     android:layout_height="0dp"
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/object"
-                    android:background="#340"
+                    android:background="#088"
+                    android:gravity="center"
+                    android:text="早晚课"
                     app:layout_aspectRatio="100%"
                     app:layout_widthPercent="60%" />
 
-                <android.support.percent.PercentRelativeLayout
+                <TextView
                     android:id="@+id/live"
                     android:layout_width="0dp"
                     android:layout_height="0dp"
                     android:layout_below="@+id/thing"
                     android:layout_toRightOf="@+id/pray"
                     android:background="#567"
+                    android:gravity="center"
+                    android:text="直播"
                     app:layout_aspectRatio="80%"
                     app:layout_widthPercent="40%" />
 
-                <android.support.percent.PercentRelativeLayout
+                <TextView
                     android:id="@+id/user"
                     android:layout_width="0dp"
                     android:layout_height="0dp"
                     android:layout_below="@+id/live"
                     android:background="#39c6c1"
+                    android:gravity="center"
+                    android:text="用户中心"
                     app:layout_aspectRatio="180%"
                     app:layout_widthPercent="100%" />
 
